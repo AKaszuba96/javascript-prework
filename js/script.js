@@ -6,6 +6,10 @@ let computerMove = 'nieznany ruch';
 
 if(randomNumber == 1){
   computerMove = 'kamień';
+} else if (randomNumber == 2){
+    computerMove = 'papier';
+} else {
+    computerMove = 'nożyce';
 }
 
 printMessage('Mój ruch to: ' + computerMove);
@@ -21,5 +25,3 @@ if(playerInput == '1'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
-
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to ' + playerMove + ', to wygrywasz!');
