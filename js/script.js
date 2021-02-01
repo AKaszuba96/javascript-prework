@@ -1,11 +1,11 @@
 {
 
-    function playGame(playerInput){
+    const playGame = function (playerInput){
 
         clearMessages()
 
         // Help functions
-        function getMoveName(argMoveId){
+        const getMoveName = function (argMoveId){
             if(argMoveId == 1){
             return 'kamień';
             } else if(argMoveId == '2'){
@@ -18,7 +18,7 @@
             return 'nieznany ruch';*/
         }
 
-        function displayResult(argComputerMove, argPlayerMove){
+        const displayResult = function (argComputerMove, argPlayerMove){
 
             console.log('moves:', argComputerMove, argPlayerMove);
 
